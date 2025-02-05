@@ -1,13 +1,3 @@
-# LAB_LOOPS
-
-
-## 1) Using range(),  make a range from 45 to 210, using a for loop iterate over the sequence and print the elements. Skip the number 100 and break the loop at 205
-
-## 2) Using a while loop and input , do the following :
-''' - Ask the the user : "what is the product of 7 * 24 ?"
-- check if the answer is right then exit the loop and print "You answered this Question correctly"
-- if the answer is wrong, then print "Your Answer is wrong try again.." and show the user the question again.'''
-
 # Task 1: Using range() with a for loop
 for number in range(45, 210):
     if number == 100:
@@ -16,4 +6,15 @@ for number in range(45, 210):
         break  # Exit the loop at 205
     print(number)
     
+    
+# Task 2: Using while loop and input for question
+while True:
+    answer = input("What is the product of 7 * 24? ")
+
+    # Check if the answer is correct
+    if answer == '168':
+        print("You answered this question correctly!")
+        break  # Exit the loop when the answer is correct
+    else:
+        print("Your answer is wrong. Try again...")
 
